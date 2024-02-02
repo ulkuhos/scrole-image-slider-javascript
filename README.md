@@ -6,7 +6,7 @@
 https://ulku.ikizoglu.com/portfolyo/scroleimageslidernew/
 
 
-![](https://ulku.ikizoglu.com/portfolyo/scroleimageslidernew/)
+![](https://github.com/ulkuhos/scrole-image-slider-javascript/blob/main/img/scroleimagesliderproject.gif)
 ---
-![](https://ulku.ikizoglu.com/portfolyo/scroleimageslidernew/)
+![](https://github.com/ulkuhos/scrole-image-slider-javascript/blob/main/img/scrollimagesliderproject.JPG)
 ---
