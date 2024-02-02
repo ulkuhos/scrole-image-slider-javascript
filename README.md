@@ -1,6 +1,6 @@
 ## scrollimageSlider - project - with JavaScript  
- #### JavaScript ile Kaydirmali Resim Galerisi Projesi  
- :point_right: Resimlerin mouse hareketi ile slider seklinde gosterimi. 
+ #### Scroll Image Gallery Project with JavaScript  
+ :point_right: Displaying images as a slider with mouse movement.
  
  #### Live :point_down: :point_down: 
 https://ulku.ikizoglu.com/portfolyo/scroleimageslidernew/
