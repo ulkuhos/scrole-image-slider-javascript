@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: #191919;
+}
+
+.gallery {
+    width: 900px;
+    display: flex;
+    overflow-x: scroll; /* saga dogru griddeki icerik tasma yaparsa, scroll ozelligi saga dogru olsun.*/
+}
+
+.gallery div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto; /* elimizde 3 tane image var bir divde o yuzden 3 tane auto ekledik.yani bir defada gorunecek oge sayisi templatei */
+    grid-gap: 20px; /* gap: gridler arasindaki bosluk, araliklar. grid ise yatay ve dikey bolumlerden olusmasi */
+    padding: 10px;
+    flex: none;    
+}
+
+.gallery div img { /* resimleri yukseklik ve genislik olarak ayarladik. */
+    height: 95%;
+    width: 95%;
+    border-radius: 10px;
+    filter: grayscale(100%); /* Grayscale(100%) Nesnemizin grilik orani 100 de 100 artmis olur.0-100 arasinda. renk filtresi uyguladik*/
+    transition: transform 0.5s;
+    /*  CSS transition ozelligi bir oge hover oldugunda ya da .active gibi bir classname aldginda degisen stil ozellilerini ogeye gecisli bir sekilde vermeyi saglar.gecis efekti icin kullanilir.
+        Transform ozelligini belirterek, transition’in bu ozellik icin gecerli olmasini da saglayabiliriz */
+}
+.gallery::-webkit-scrollbar {
+    display: none;
+} /*Kaydirma cubuklarinin(scrollbars) kapladigi alani tanimlamak icin kullanilir. Verilen width degeri ekranin sag tarafinda cikan scroll un genislik degerini ayarlar. height ise sayfanin altinda cikan scroll un yukseklik degerini ayarlar.  */
+
+.gallery-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% auto;
+}
+
+#backBtn, #nextBtn {
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+.gallery div img:hover {
+    filter: grayscale(0); /* renk filtresi uyguladik. Grayscale(0) Nesnemizi ilk halinde olur, cunku 0 deger almis.0-100 arasinda. */
+    cursor: pointer;
+    transform: scale(1.1); 
+    
+ /* CSS transition ozelligi bir oge hover oldugunda ya da .active gibi bir classname aldginda degisen stil ozellilerini ogeye gecisli bir sekilde vermeyi saglar.gecis efekti icin kullanilir */
+ /* CSS'de scale() metodu, bir etiketin boyutunu arttirmak veya azaltmak icin kullanilir. Bir elementin orjinal boyutunun orani 1'dir. Eger 1 den kucuk bir oran girilirse bu sefer ogenin boyutu kuculecektir.
+ scale(1:1), div etiketinin orijinal genisligini 1.1 oraninda kucultur.(genislik sadce)
+ scale(1,1), div etiketinin orijinal genisligini ve yuksekligini 1(kendi) oraninda kucultur (genislik-yukseklik)
+ yani ben resmin uzerine gelince hover olur ve resim eski haline gore genisligi 1.1 oraninda buyur demek istedik.*/
+}
