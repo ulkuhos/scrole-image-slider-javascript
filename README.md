@@ -1,6 +1,6 @@
 ## scrollimageSlider - project - with JavaScript  
  #### Scroll Image Gallery Project with JavaScript  
- :point_right: Displaying images as a slider with mouse movement.
+ :point_right: Displaying images as a slider with mouse movement...
  
  #### Live :point_down: :point_down: 
 https://ulku.ikizoglu.com/portfolyo/scroleimageslidernew/
